@@ -104,6 +104,8 @@ public abstract class Bag {
 		String value = this.contents[this.numberOfContents - 1];
 		this.contents[this.numberOfContents - 1] = null;
 
+		this.numberOfContents -= 1;
+
 		return value;
 	}
 
